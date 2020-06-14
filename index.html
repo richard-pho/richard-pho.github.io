@@ -7,32 +7,76 @@
   }
   .navbar{
     padding:10px;
-    margin-left:-10px;
+    margin-left:-5px;
     width:100%;
     background-color:#8E000;
   }
   .navbar{
     padding:10px;
     font-size: 15px;
-    font color=yellow;
     background-color:#90EE90;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  .sticky + .information {
+  padding-top: 102px;
   }
 </style>
 <body style="background-color:#add8e6">
-<div class= "titlebar">
+  <div class= "titlebar">
+      <center>
+        RICHARD PHO
+      </center>
+    </div>
+  <div class="w3-container" id="nav">
+     <div class="navbar">
+       <center>
+         <a href="#AboutSection" class="w3-bar-item w3-button">About Me</a>
+         <a href="" class="w3-bar-item w3-button">Projects</a>
+         <a href="" class="w3-bar-item w3-button">Education</a>
+         <a href="" class="w3-bar-item w3-button">Resume</a>
+         <a href="" class="w3-bar-item w3-button">Experience</a>
+       </center>
+     </div>
+  </div>
+  <div class= "information">
     <center>
-      RICHARD PHO
+      <h1 id="AboutSection"> ABOUT ME </h1>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
+      <p>Some information about me </p>
     </center>
   </div>
-<div class="w3-container">
-  <div class="navbar">
-    <center>
-      <a href="" class="w3-bar-item w3-button">About Me</a>
-      <a href="" class="w3-bar-item w3-button">Projects</a>
-      <a href="" class="w3-bar-item w3-button">Education</a>
-      <a href="" class="w3-bar-item w3-button">Resume</a>
-      <a href="" class="w3-bar-item w3-button">Experience</a>
-    </center>
-  </div>
-</div>
+  <script>
+    
+    window.onscroll = function() {myFunction()};
+    var header = document.getElementById("nav");
+    var sticky = header.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 </body>
